@@ -28,6 +28,16 @@ jobs:
           VITE_APPWRITE_COLLECTION_ID: ${{ secrets.VITE_APPWRITE_COLLECTION_ID }}
           VITE_TMDB_API_KEY: ${{ secrets.VITE_TMDB_API_KEY }}
 
+      - name: Check env vars
+        run: |
+          echo "Project: $VITE_APPWRITE_PROJECT_ID"
+          echo "Database: $VITE_APPWRITE_DATABASE_ID"
+          echo "Collection: $VITE_APPWRITE_COLLECTION_ID"
+        env:
+          VITE_APPWRITE_PROJECT_ID: ${{ secrets.VITE_APPWRITE_PROJECT_ID }}
+          VITE_APPWRITE_DATABASE_ID: ${{ secrets.VITE_APPWRITE_DATABASE_ID }}
+          VITE_APPWRITE_COLLECTION_ID: ${{ secrets.VITE_APPWRITE_COLLECTION_ID }}
+
       - name: Upload production-ready build files
         uses: actions/upload-artifact@v4
         with:
