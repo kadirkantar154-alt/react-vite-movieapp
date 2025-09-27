@@ -18,6 +18,11 @@ Through this project, I learned and practiced the following:
 - **Styling**: Using **TailwindCSS** and similar utility-first styling packages.
 - **Component-Based Design**: Organizing UI into reusable components.
 
+## Live Demo
+
+You can check out the live version of this project hosted on GitHub Pages:
+
+[Movie Trend Tracker Live](https://kadirkantar154-alt.github.io/react-vite-movieapp/)
 
 ## Features
 
