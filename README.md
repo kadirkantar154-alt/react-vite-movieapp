@@ -3,6 +3,22 @@ This project is a React application that tracks the most searched movies by user
 It is built with Vite, uses the TMDB API for movie data, and Appwrite for storing user search data.
 The project is deployed on GitHub Pages using GitHub Actions.
 
+## Disclaimer
+This project was built following a **YouTube tutorial by JavaScript Mastery** and is not entirely my original work.  
+Here’s the tutorial link: [JavaScript Mastery - Movie App](https://www.youtube.com/watch?v=dCLhUialKPQ)
+
+Through this project, I learned and practiced the following:
+
+- **Vite**: How to set up and structure projects with Vite.
+- **React Basics**:
+    - React states
+    - Conditional rendering
+    - `useEffect` hooks
+- **API Integration**: How to fetch data from external APIs and extract necessary information.
+- **Styling**: Using **TailwindCSS** and similar utility-first styling packages.
+- **Component-Based Design**: Organizing UI into reusable components.
+
+
 ## Features
 
 - Modern frontend architecture with Vite + React.
