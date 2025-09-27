@@ -1,16 +1,54 @@
-# React + Vite
+# Movie Trend Tracker
+This project is a React application that tracks the most searched movies by users and displays trending films.
+It is built with Vite, uses the TMDB API for movie data, and Appwrite for storing user search data.
+The project is deployed on GitHub Pages using GitHub Actions.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Features
 
-Currently, two official plugins are available:
+- Modern frontend architecture with Vite + React.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Fetch and display movie data using TMDB API.
 
-## React Compiler
+- Store user search data in Appwrite Database to generate trending movies.
 
-The React Compiler is not enabled on this template. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Automated deployment using GitHub Actions.
 
-## Expanding the ESLint configuration
+- Responsive and user-friendly interface.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+## Installation
+1. Clone the repo:
+```bash
+git clone https://github.com/kadirkantar154-alt/react-vite-movieapp.git
+cd react-vite-movieapp
+```
+2. Install the dependencies:
+```bash
+npm install
+```
+3. Create a .env.local file and add the following environment variables:
+```bash
+VITE_TMDB_API_KEY=<TMDB_API_KEY>
+VITE_APPWRITE_PROJECT_ID=<APPWRITE_PROJECT_ID>
+VITE_APPWRITE_DATABASE_ID=<APPWRITE_DATABASE_ID>
+VITE_APPWRITE_COLLECTION_ID=<APPWRITE_COLLECTION_ID>
+```
+4. Run the development server:
+```bash
+npm run dev
+```
+
+## Deployment
+- The project is deployed on GitHub Pages using GitHub Actions.
+- API keys and Appwrite IDs are injected into the build via GitHub Secrets.
+
+## Usage
+1. Type a movie name in the search bar and search
+2. User searches are stored in the Appwrite database.
+3. The Trending Movies section automatically displays the most searched movies.
+
+## Technologies
+- React + Vite
+- Appwrite (Database & Documents)
+- TMDB API (The Movie Database)
+- Github Actions (CL/CD & Deployment)
