@@ -36,6 +36,8 @@ You can check out the live version of this project hosted on GitHub Pages:
 
 - Responsive and user-friendly interface.
 
+- Unit Tests With Cypress
+
 
 ## Installation
 1. Clone the repo:
@@ -73,3 +75,4 @@ npm run dev
 - Appwrite (Database & Documents)
 - TMDB API (The Movie Database)
 - Github Actions (CL/CD & Deployment)
+- Unit Tests With Cypress
