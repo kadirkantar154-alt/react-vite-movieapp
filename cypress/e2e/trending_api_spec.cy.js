@@ -1,15 +1,12 @@
 describe('Trending Movies Appwrite Integration', () => {
     it('should write or update Appwrite documents and render trending movies', () => {
 
-        let createRequest = null;
-        let updateRequest = null;
-
         // POST veya PATCH çağrılarını yakala
         cy.intercept('POST', '**/databases/*/collections/*/documents').as('createDocument')
         cy.intercept('PATCH', '**/databases/*/collections/*/documents/*').as('updateDocument')
         cy.intercept('GET', '**/databases/*/collections/*/documents*').as('getDocuments')
 
-        cy.visit('http://localhost:5173')
+        cy.visit('https://kadirkantar154-alt.github.io/react-vite-movieapp/')
 
         const searchTerm = 'Land'
         cy.get('input[placeholder="Search through thousands of movies"]')

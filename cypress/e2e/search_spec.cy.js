@@ -2,7 +2,7 @@ describe('Movie Search', () => {
     it('should fetch movies from TMDB API when searching', () => {
         cy.intercept('GET', '**/search/movie**').as('searchMovies')
 
-        cy.visit('http://localhost:5173')
+        cy.visit('https://kadirkantar154-alt.github.io/react-vite-movieapp/')
 
         cy.get('input[placeholder="Search through thousands of movies"]').type('Inception')
 
